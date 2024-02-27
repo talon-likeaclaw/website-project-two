@@ -1,0 +1,1352 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/*
+* DARK:
+* Text: #FEF9EC
+* Background: #140f00
+* Primary: #ff8400
+* Secondary: #8c5000
+* Accent: #d22d2d
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: #FEF9EC;
+  background-color: #140f00;
+
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 25px 10px;
+  padding: 25px 25px;
+  border: solid;
+  border-color: #ff8400;
+  border-radius: 25px;
+  border-width: 1px;
+}
+
+#navView {
+  flex: 1;
+  display: flex;
+}
+
+.navigation button {
+  display: none;
+}
+
+header h1 {
+  font-size: 1.4em;
+  max-width: 150px;
+  padding-top: 15px;
+}
+
+header a {
+  border-radius: 20px;
+  background: linear-gradient(to right, #d22d2d, #BC5605);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.navButton {
+  margin: 15px;
+}
+
+header .navButton:hover {
+  background: linear-gradient(to right, #BC5605, #d22d2d);
+}
+
+header .navButton:active {
+  background: linear-gradient(0deg, #BC5605, #d22d2d);
+}
+
+.logo {
+  all: initial;
+  cursor: pointer;
+}
+
+#subnav {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#subnav a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#subnav a:active {
+  font-weight: bold;
+  color: #00BBFF;
+  text-decoration: underline;
+}
+
+#emptySpace {
+  flex: 1;
+}
+
+#subnav a {
+  font-weight: bold;
+}
+
+#subnav ul {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+  background: linear-gradient(to right, #d22d2d, #BC5605);
+  padding: 20px;
+  border-radius: 25px;
+  margin: 0px 25px;
+}
+
+#mainNav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  min-width: 500px;
+  align-items: center;
+}
+
+#header {
+  flex: 4;
+}
+
+#header li {
+  list-style: none;
+  margin: 30px 10px;
+}
+
+#subnav li {
+  list-style: none;
+  margin: 10px 40px;
+}
+
+#header li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+#subnav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  margin-right: 150px;
+}
+
+.homepage_article {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  margin: 25px;
+  border: solid;
+  border-color: #ff8400;
+  border-radius: 25px;
+  border-width: 1px;
+}
+
+.homepage_article>p {
+  font-size: 1em;
+  padding-left: 0px;
+  max-width: 100%;
+}
+
+.homepage_article li {
+  margin-top: 10px;
+}
+
+.homepage_header {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2.0em;
+}
+
+.homepage_subheader {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2.0em;
+}
+
+.homepage_article ol {
+  margin-top: 5px;
+  margin-left: 0px;
+  max-width: 90%;
+}
+
+p {
+  font-size: 1.25em;
+  padding-left: 50px;
+  max-width: 80%;
+}
+
+
+aside {
+  width: 70px;
+  background-color: #00000000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  z-index: 999;
+  padding-right: 35px;
+  margin-bottom: 15px;
+}
+
+margin-bott #social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+aside ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 0px;
+  margin-left: 1px;
+}
+
+#insta,
+#discord,
+#facebook {
+  filter: invert(25%) sepia(65%) saturate(5416%) hue-rotate(3deg) brightness(102%) contrast(106%);
+}
+
+.top {
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #BC5605, #d22d2d);
+  border-radius: 100px;
+  min-width: 110px;
+  margin-right: 5px;
+}
+
+.top:hover {
+  background: linear-gradient(to right, #d22d2d, #BC5605);
+}
+
+.top:active {
+  background: linear-gradient(0deg, #BC5605, #d22d2d);
+}
+
+.footerRight {
+  display: flex;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 5em;
+  margin: 25px 25px 25px 25px;
+  color: #faf5fa;
+}
+
+h3,
+h4,
+h2,
+h5 {
+  font-family: 'Fantasy', Impact;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 1px;
+  padding-top: 0.3em;
+  padding-bottom: 1px;
+  color: #FEF9EC;
+  margin-left: 2em;
+}
+
+footer {
+  display: flex;
+  border: solid 1px orangered;
+  border-radius: 1em;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 20px 40px;
+  margin: 25px 25px 25px 25px;
+  max-width: 30%;
+}
+
+footer .sources {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2.0em;
+  max-width: 90%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+footer ul {
+  max-width: 90%;
+  line-height: 30px;
+  list-style: none;
+  padding-left: 40px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #FEF9EC;
+  font-size: 30px;
+
+}
+
+footer ul li a:hover {
+  color: orange;
+}
+
+
+
+/*---------------LESSY WEBPAGES*/
+
+/*//-------------------INTRO PAGE*/
+.hTagsMain {
+  font-size: 100px;
+  text-align: center;
+  margin: 100px;
+}
+
+.hTagsMain a {
+  text-decoration: none;
+  color: #FEF9EC;
+  cursor: pointer;
+}
+
+#front {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+
+#containerMain h1 {
+  font-size: 80px;
+}
+
+#typeOfGame {
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+p#typeOfGame {
+  padding-left: 0px;
+}
+
+#val_logo {
+  max-height: 40vh;
+  margin-top: 100px;
+}
+
+
+#containerMain {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px #060005;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 5px 10px;
+  max-width: 90vh;
+  background: linear-gradient(0deg, #BC5605, #962029);
+}
+
+.gameInformation {
+  margin: 100px;
+  padding: 100px;
+}
+
+.mainContentText {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px #060005;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin: 5px 10px;
+  max-width: 70vh;
+  background: linear-gradient(0deg, #BC5605, #962029);
+  line-height: 50px;
+}
+
+.mainContentText a {
+  text-decoration: none;
+  color: #FEF9EC;
+}
+
+.mainContentText a:hover {
+  color: yellow;
+}
+
+.ifoMain {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ifoMain img {
+  max-width: 60vh;
+  width: 100%;
+  height: auto;
+}
+
+/*//---------------AGENTS*/
+#emptyH1 {
+  color: transparent;
+  /* -webkit-text-stroke: 1px #FEF9EC; */
+}
+
+
+
+#frontImage {
+  max-height: 50vh;
+  margin-top: 100px;
+}
+
+#banner {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px #060005;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+#banner p {
+  font-size: 20px;
+  line-height: 60px;
+  width: 70%;
+  color: #FEF9EC;
+}
+
+#banner h1 {
+  font-size: 4em;
+  margin-left: 40px;
+
+}
+
+.aboutAgent {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+.agentPageArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 300px;
+}
+
+.ability1,
+.ability2,
+.ability3,
+.ult {
+  height: 60px;
+  width: auto;
+}
+
+.stats,
+.abilities li {
+  list-style: none;
+  margin: 5px;
+
+}
+
+.desctiprion {
+  min-width: 200px;
+  max-width: 400px;
+}
+
+.firstTwoAb,
+.secondTwoAb {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  max-width: 70%;
+  align-items: flex-end;
+}
+
+.abilities {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.abilities ul {
+  display: flex;
+  padding: 0;
+}
+
+.stats {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+
+.lore {
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  max-width: 80vh;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px #060005;
+  background: #962029;
+  padding: 20px;
+  margin: 20px 60px;
+  line-height: 30px;
+  align-items: center;
+}
+
+.agentInfo {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(0deg, #BC5605, #962029);
+  max-width: 90vh;
+}
+
+#kj,
+#viper,
+#sova {
+  height: 60vh;
+  width: auto;
+  display: flex;
+  margin-top: 90px;
+}
+
+#lore {
+  border: 1px solid #00000000;
+  border-radius: 3em;
+}
+
+/*//---------------MAPS*/
+.mapTypes img {
+  max-width: 900px;
+  margin: 10px;
+}
+
+.mapTypes {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #BC5605;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px #962029;
+  margin: 100px;
+  padding: 30px;
+  width: 1000px;
+}
+
+.description {
+  font-weight: 100;
+  font-size: 1.5em;
+  margin: 30px 0 40px;
+  line-height: 60px;
+  width: 80%;
+}
+
+#containerMaps {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mapDetails {
+  padding: 20px 40px;
+  margin: 25px;
+  border: solid 1px #ff8400;
+  box-shadow: 5px 5px 10px 2px #962029;
+  border-radius: 25px;
+  border-width: 1px;
+}
+
+#mapInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.switchImg {
+  display: flex;
+  align-items: center;
+}
+
+.switchImg button {
+  max-height: 30px;
+  background-color: #00000000;
+  filter: invert(25%) sepia(65%) saturate(5416%) hue-rotate(3deg) brightness(102%) contrast(106%);
+  cursor: pointer;
+}
+
+/*--Quiz Game*/
+.lessysQuiz {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.radioImg {
+  height: 60vh;
+  width: auto;
+  display: flex;
+  margin-top: 90px;
+  margin: 20px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+input[type="radio"] {
+  appearance: none;
+
+}
+
+.lessysQuiz {
+  max-width: 80vw;
+  border: 1px solid #ff8400;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.lessysQuiz legend {
+  font-size: 40px;
+}
+
+.checkAgent {
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: linear-gradient(0deg, #BC5605, #962029);
+  margin: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+/*-----------------------------------------------------------------------*/
+/*-------------------*/
+/*--TALONS WEBPAGES--*/
+
+
+
+/*----------------------------*/
+/*--ROCKET LEAGUE INTRO PAGE--*/
+.rl_article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  margin: 25px;
+  border: solid;
+  border-color: #ff8400;
+  border-radius: 25px;
+  border-width: 1px;
+}
+
+.rl_article>section>p {
+  font-size: 1em;
+  padding-left: 0px;
+  max-width: 100%;
+}
+
+.rl_header {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2.5em;
+}
+
+h2.rl_header {
+  padding-bottom: 40px;
+}
+
+h3.rl_header {
+  font-size: 2.0em;
+}
+
+.rl_cars_maps_header {
+  margin-left: 20px;
+  padding-left: 25px;
+  font-size: 2.5em;
+}
+
+.rl_sub_header {
+  padding: 0px;
+  margin: 0px;
+  font-size: 2em;
+}
+
+/*-- What is Rocket League? --*/
+#rl_features {
+  margin-top: 5px;
+  margin-left: 0px;
+  padding-left: 15px;
+}
+
+#rl_features li {
+  margin-top: 5px;
+  margin-left: 0px;
+  max-width: 90%;
+}
+
+#rl_text {
+  flex: 3;
+  margin-right: 0px;
+}
+
+#rl_image {
+  flex: 1;
+  margin: 0px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/*-- Rocket League Championship Series --*/
+#rl_rlcs_article {
+  display: flex;
+  flex-direction: column;
+}
+
+#rl_header_rlcs {
+  align-self: center;
+  font-size: 2.2em;
+}
+
+#rl_rlcs_text {
+  margin-right: 0px;
+}
+
+.rl_ul {
+  margin: 0px;
+  padding: 0px 0px 25px 15px;
+}
+
+.rl_ul>li {
+  padding-top: 15px;
+  max-width: 100%;
+}
+
+/*-- Rocket League History --*/
+#rl_header_history {
+  font-size: 2.5em;
+  align-self: center;
+}
+
+#rl_history {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#rl_history>p {
+  max-width: 100%;
+  padding-left: 0px;
+  font-size: 1em;
+}
+
+
+/*-----------------*/
+/*--CARS AND MAPS--*/
+.carshow {
+  padding: 20px 40px;
+  margin: 25px;
+  border: solid;
+  border-color: #ff8400;
+  border-radius: 25px;
+  border-width: 1px;
+
+}
+
+#carshow {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 40px;
+  flex-wrap: wrap;
+}
+
+#carshow>article {
+  flex: 1;
+}
+
+#mapshow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 40px;
+  flex-wrap: wrap;
+}
+
+#mapshow>article {
+  flex: 1;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.cartype {
+  margin: 0px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+#mapshow {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.mapname {
+  margin: 0px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/*-------------------*/
+
+/*--STATS AND CLIPS--*/
+#personal_stats {
+  display: flex;
+  flex-direction: column;
+}
+
+#rl_stats_table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 25px;
+}
+
+table {
+  width: 80%;
+}
+
+th {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 30px;
+  width: 100px;
+}
+
+td {
+  text-align: center;
+  font-size: 2.0em;
+
+}
+
+#clipsSection {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 25px;
+  min-width: 100%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.iframe_div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin: 25px 0px;
+}
+
+
+#rl_canvas {
+  border: 5px solid white;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 499px) {
+
+  /*----Mobile Hamburger Menu*/
+  /*----Common styles*/
+  html {
+    scroll-padding-top: 180px;
+    scroll-behavior: smooth;
+  }
+
+  header h1 {
+    font-size: 1em;
+    max-width: 150px;
+    padding-top: 30px;
+  }
+
+  #mainNav {
+    display: none;
+  }
+
+  #mobile-nav {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #140f00;
+    display: block;
+    padding-top: 120px;
+    z-index: 1;
+  }
+
+  #mobile-mainNav a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 16px;
+    background: linear-gradient(to right, #d22d2d, #BC5605);
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+  }
+
+  #mobile-mainNav a:hover {
+    background-color: #312400;
+  }
+
+  #mobile-mainNav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    list-style: none;
+    margin: 25px;
+    padding: 40px;
+  }
+
+  #mobile-mainNav li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    right: 0;
+  }
+
+  aside {
+    display: none;
+  }
+
+  .logo img {
+    max-width: 11vh;
+    padding-top: 10px;
+  }
+
+  #subnav ul {
+    min-width: 85%;
+    flex-direction: column;
+    margin: 0px 10px;
+  }
+
+  header {
+    position: fixed;
+    z-index: 1000;
+    background-color: #1d1602;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 0;
+    padding-bottom: 0px;
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+  }
+
+  main {
+    padding-top: 160px;
+    margin: 0px;
+    max-width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    box-shadow: none;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+  }
+
+  .hamburger span {
+    color: #fff;
+  }
+
+  footer {
+    max-width: 90vw;
+    margin: 25px 10px;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  footer h2 {
+    font-size: 25px;
+  }
+
+  footer ul li a {
+    font-size: 15px;
+  }
+
+  /*------Talon's pages*/
+  .rl_article {
+    flex-direction: column;
+    font-size: 1em;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 10px;
+  }
+
+  .rl_article>section>p {
+    max-width: 100%;
+  }
+
+  .rl_article>h2 {
+    margin-bottom: 50px;
+  }
+
+  h3.rl_header {
+    font-size: 1.6em;
+  }
+
+  h4.rl_sub_header {
+    font-size: 1.25em;
+  }
+
+  .rl_header {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .rl_sub_header {
+    font-size: 1.8em;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .rl_ul {
+    padding-left: 15px;
+  }
+
+  .rl_ul>li {
+    padding-top: 15px;
+    max-width: 100%;
+  }
+
+  #rl_rlcs_article {
+    flex-direction: column;
+  }
+
+  #rl_rlcs_image {
+    padding: 0px;
+  }
+
+  #rl_header_rlcs {
+    font-size: 1.7em;
+    text-align: center;
+  }
+
+  #rl_header_history {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+  }
+
+  #rl_history>p {
+    padding-left: 0px;
+    font-size: 1em;
+  }
+
+  .header_stats_clips {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.7em;
+    text-align: center;
+  }
+
+  .header_stats_clips {
+    font-size: 1.7em;
+    text-align: center;
+  }
+
+  #header_stats {
+    margin-bottom: 0px;
+  }
+
+  #header_clips {
+    margin-bottom: 0px;
+  }
+
+  .carshow {
+    margin: 25px 10px;
+  }
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iframe_div {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    margin: 25px 0px;
+  }
+
+  .homepage_article {
+    margin: 25px 10px;
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .homepage_article ol {
+    padding-left: 20px;
+  }
+
+
+  th,
+  td {
+    font-size: 1.5em;
+  }
+
+  p,
+  li {
+    max-width: 100vw;
+    line-height: 2em;
+  }
+
+  /*----Lessy's pages*/
+  /*----Home page*/
+
+  #containerMain {
+    max-width: 100%;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  #containerMain h1 {
+    font-size: 2em;
+  }
+
+  #front,
+  .ifoMain {
+    max-width: 100%;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #front img {
+    display: none;
+  }
+
+  .hTagsMain {
+    font-size: 40px;
+  }
+
+  .gameInformation {
+    margin: 0px;
+  }
+
+  .mainContentText {
+    max-width: 80vw;
+  }
+
+  .gameInformation {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .ifoMain img {
+    padding-top: 20px;
+  }
+
+  p#typeOfGame {
+    padding: 0px 15px;
+  }
+
+
+  /*----Agent's & Map pages*/
+  #banner {
+    max-width: 80%;
+  }
+
+  #banner h1 {
+    margin-left: 0px;
+  }
+
+  #banner>p {
+    padding-left: 0px;
+  }
+
+  .abilities,
+  .lore,
+  .agentPageArticle,
+  #containerMaps {
+    max-width: 100%;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutAgent {
+    flex-direction: column;
+    margin: 20px 0px;
+  }
+
+  #sova,
+  #viper,
+  #kj {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0px auto;
+
+  }
+
+  .lore {
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  .abilities {
+    max-width: 80%;
+  }
+
+  .desctiprion {
+    font-size: 15px;
+  }
+
+  .abilities ul {
+    flex-direction: column;
+  }
+
+  .agentInfo {
+    margin: 20px;
+  }
+
+  p.map {
+    padding: 0px 20px;
+  }
+
+  .mapTypes {
+    max-width: 90vw;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .mapTypes img {
+    max-width: 65vw;
+  }
+
+  #mapDetails {
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .maps_h_tags {
+    font-size: 40px;
+    margin: 10px;
+    /* font-weight: 500px; */
+  }
+
+  .description {
+    font-size: 15px;
+    padding: 0px 5px;
+  }
+
+  /*----Quiz Game*/
+  .quiz-continer {
+    flex-direction: column;
+  }
+
+  .quiz_h_tags {
+    font-size: 30px;
+  }
+
+  .lessysQuiz legend {
+    font-size: 20px;
+  }
+
+  .lessysQuiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .radioImg {
+    width: 70%;
+    height: auto;
+    display: flex;
+  }
+
+}

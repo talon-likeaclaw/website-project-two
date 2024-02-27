@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Valorant Quiz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles/style-dark.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  <script src="script.js" defer></script>
+  <script src="val-quiz.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <header>
+
+    <section id="navView">
+      <a class="logo" href=index.html><img src="assets/logo.svg" alt="Logo" height="135" width="135"></a>
+      <h1>Explore Cyberhobbies</h1>
+    </section>
+
+    <nav id="header">
+      <ul id="mainNav">
+        <li><a class="navButton" href="index.html">&#8962; Homepage</a></li>
+        <li><a class="navButton" href="valorant.html">&#9813; Valorant</a></li>
+        <li><a class="navButton" href="rocketleague.html">&#9736; Rocket League</a></li>
+        <li><a class="navButton" href="#">&#9788; Toggle Theme</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="hamburger">
+      <span class="material-symbols-outlined" id="menue">
+        menu
+      </span>
+      <span class="material-symbols-outlined" id="close" style="display: none">
+        close
+      </span>
+    </button>
+
+  </header>
+  <nav id="mobile-nav" style="display: none">
+    <ul id="mobile-mainNav">
+      <li><a class="navButton" href="index.html">&#8962; Homepage</a></li>
+      <li><a class="navButton" href="valorant.html">&#9813; Valorant</a></li>
+      <li><a class="navButton" href="rocketleague.html">&#9736; Rocket League</a></li>
+      <li><a class="navButton" href="#">&#9788; Toggle Theme</a></li>
+    </ul>
+  </nav>
+
+
+
+  <!-- MAIN -->
+  <main>
+
+
+    <!--SUB NAVIGATION -->
+    <nav id="subnav">
+      <ul>
+        <li><a href="valorant.html">Introduction to Valorant</a></li>
+        <li><a href="val-agents.html">Agents</a></li>
+        <li><a href="val-maps.html">Maps</a></li>
+        <li><a href="val-quiz.html">Quiz Game</a></li>
+      </ul>
+
+
+      <div id="emptySpace"></div>
+    </nav>
+
+    <h1 class="quiz_h_tags">Let's check how well<br>You know Valorant!</h1>
+    <section class="quiz-continer">
+      <h2 id="resultQuiz">&nbsp;</h2>
+      <fieldset class="lessysQuiz">
+        <legend>Who is from Russia?</legend>
+        <input type="radio" name="valorant" value="sova" id="option1">
+        <label for="option1"><img class="radioImg" src="assets/L-assets/sova/sova.png" alt="Sova Agent"></label><br>
+
+        <input type="radio" name="valorant" value="viper" id="option2">
+        <label for="option2"><img class="radioImg" src="assets/L-assets/viper/viper.png" alt="Viper Agent"></label><br>
+
+        <input type="radio" name="valorant" value="killjoy" id="option3">
+        <label for="option3"><img class="radioImg" src="assets/L-assets/kj/kj.png" alt="Killjoy Agent"></label>
+      </fieldset>
+      <button type="submit" value="Submit" class="checkAgent">Next question</button>
+    </section>
+
+
+
+
+    <!--Aside tag with Social Medias on the right side of the Web Page-->
+    <aside>
+      <ul id="social">
+        <li><a href="https://www.instagram.com/lessya01/" target="_blank"><img id="insta"
+              src="assets/L-assets/social/insta.png" alt="Insta Logo" height="50" width="50"></a>
+        </li>
+        <li><a href="https://www.facebook.com/olessya.malkova/about/" target="_blank"><img id="facebook"
+              src="assets/L-assets/social/fb.png" alt="FaceBook Logo" height="50" width="50"></a>
+        </li>
+        <li><a href="https://discord.com/channels/1128840174529417238/1142537859153285224" target="_blank"><img
+              id="discord" src="assets/L-assets/social/dis.png" alt="Discord Logo" height="40" width="50"></a>
+        </li>
+      </ul>
+
+
+      <a class="top" href='#'>Back to Top ↑</a>
+
+
+    </aside>
+
+  </main>
+  <!-- FOOTER -->
+  <footer>
+    <h3 class="sources">Sources:</h3>
+    <ul>
+
+
+      <li><a href="https://valorant.fandom.com/wiki/" target="_blank">Info About Agents</a> </li>
+      <li><a href="https://playvalorant.com/en-us/" target="_blank">Valorant Info</a>
+      </li>
+      <li><a href="https://playvalorant.com/en-us/maps/" target="_blank">Info About Maps</a> </li>
+      <li><a href="https://valorantesports.com/" target="_blank">E-Sport Valorant</a>
+      </li>
+      <li><a href="https://www.freepik.com/free-photos-vectors/" target="_blank">Vector Images</a></li>
+
+
+    </ul>
+  </footer>
+
+</body>
+
+</html>
